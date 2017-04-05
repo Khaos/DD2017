@@ -17,7 +17,7 @@ Usage:
 python demo.py --input_image data/demo.png [--output_image output_image]
                 [--logdir /path/to/weights] [--gpus 0]
 
-
+python demo.py --input_image data/demo.png
 """
 from __future__ import absolute_import
 from __future__ import division
@@ -27,6 +27,7 @@ import json
 import logging
 import os
 import sys
+import time
 
 import collections
 
