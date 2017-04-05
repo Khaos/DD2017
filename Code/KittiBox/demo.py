@@ -17,7 +17,7 @@ Usage:
 python demo.py --input_image data/demo.png [--output_image output_image]
                 [--logdir /path/to/weights] [--gpus 0]
 
-python demo.py --input_image data/demo.png
+
 """
 from __future__ import absolute_import
 from __future__ import division
@@ -27,7 +27,6 @@ import json
 import logging
 import os
 import sys
-import time
 
 import collections
 
@@ -48,7 +47,9 @@ flags = tf.app.flags
 FLAGS = flags.FLAGS
 
 sys.path.insert(1, 'incl')
-from utils import train_utils as kittibox_utils
+#from utils import train_utils as kittibox_utils
+import train_utils as kittibox_utils
+import utils
 
 try:
     # Check whether setup was done correctly
