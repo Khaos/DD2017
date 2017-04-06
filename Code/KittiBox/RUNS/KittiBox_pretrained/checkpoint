@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/mifs/mttt2/local_disk/RUNS/TensorDetect2/paper_bench/tau5_zoom_0_kitti_2016_11_09_05.57/model.ckpt-179999"
+all_model_checkpoint_paths: "/home/mifs/mttt2/local_disk/RUNS/TensorDetect2/paper_bench/tau5_zoom_0_kitti_2016_11_09_05.57/model.ckpt-179999"

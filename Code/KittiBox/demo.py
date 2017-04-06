@@ -14,7 +14,7 @@ Utilizes: Trained KittiBox weights. If no logdir is given,
 pretrained weights will be downloaded and used.
 
 Usage:
-python demo.py --input_image data/demo.png [--output_image output_image]
+python demo.py --input_image data/demo.png# [--output_image output_image]
                 [--logdir /path/to/weights] [--gpus 0]
 
 
@@ -47,14 +47,14 @@ flags = tf.app.flags
 FLAGS = flags.FLAGS
 
 sys.path.insert(1, 'incl')
-#from utils import train_utils as kittibox_utils
-import train_utils as kittibox_utils
-import utils
+# from submodules import utils
+from submodules.utils import train_utils as kittibox_utils
+# from utils import train_utils as kittibox_utils
 
 try:
     # Check whether setup was done correctly
-    import tensorvision.utils as tv_utils
-    import tensorvision.core as core
+    import submodules.TensorVision.tensorvision.utils as tv_utils
+    import submodules.TensorVision.tensorvision.core as core
 except ImportError:
     # You forgot to initialize submodules
     logging.error("Could not import the submodules.")

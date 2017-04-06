@@ -1,8 +1,8 @@
 import sys
 #import AnnoList_pb2
-import AnnotationLib;
+from submodules.utils.annolist import AnnotationLib;
 
-from ma_utils import is_number;
+# from ma_utils import is_number;
 
 def loadPal(filename):
     _annolist = AnnoList_pb2.AnnoList();
@@ -39,7 +39,7 @@ def al2pal(annotations):
                 if k in annotations.attribute_val_to_str:
                     # don't allow undefined values
                     if not v in annotations.attribute_val_to_str[k]:
-                        print "attribute: {}, undefined value: {}".format(k, v);
+                        print("attribute: {}, undefined value: {}".format(k, v));
                         assert(False);
 
     # store attribute descriptions in pal structure
@@ -92,7 +92,7 @@ def pal2al(_annolist):
 
     for adesc in _annolist.attribute_desc:
         annotations.attribute_desc[adesc.name] = adesc;
-        print "attribute: ", adesc.name, adesc.id
+        print("attribute: ", adesc.name, adesc.id)
 
         for valdesc in adesc.val_to_str:
             annotations.add_attribute_val(adesc.name, valdesc.s, valdesc.id);
@@ -129,8 +129,8 @@ def pal2al(_annolist):
                     cur_aname = attribute_name_from_id[_at.id];
                     cur_dtype = attribute_dtype_from_id[_at.id];
                 except KeyError as e:
-                    print "attribute: ", _at.id
-                    print e
+                    print("attribute: ", _at.id)
+                    print(e)
                     assert(False);
 
                 if cur_dtype == AnnotationLib.AnnoList.TYPE_INT32:
