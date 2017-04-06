@@ -5,19 +5,19 @@ This is the compiled version of KittiBox, with the system os as windows10, and g
 I wrote this to leave a note for myself, as it WORKED. 
 And with the hope of getting hints for others, just like many open sources helped me.
 
-## install nividia 
+##  nividia driver
 cuda toolkit v8.0 
 
-## downlaod cuDNN v5.1 
+## cuDNN v5.1 
 for cuda8.0 and windows10
 unzip cuDNN and put the 3 files into corresponding folders in path for cudatoolkit, such as C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0
 
-## install MCVS
+## Microsof visual studio cpp
 visual studio 2015 community,  Microsoft Visual C++ and its sdk etc
 test your installation via opening project 
 
-## install python3.5 
-then install the following packages by downloading .whl from http://www.lfd.uci.edu/~gohlke/pythonlibs/ and cmd;pip install xxx.whl
+## python3.5 
+install python3.5, then install the following packages by downloading .whl from http://www.lfd.uci.edu/~gohlke/pythonlibs/ and cmd;pip install xxx.whl
 * matplotlib
 * numpy
 * Pillow
