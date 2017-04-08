@@ -3,28 +3,33 @@
 Based on the project KittiBox https://github.com/MarvinTeichmann/KittiBox
 This is the compiled version of KittiBox, with the system os as windows10, and gpu of GeForce960
 I wrote this to leave a note for myself, as it WORKED. 
-And with the hope of getting hints for others, just like many open sources helped me.
+And I am with the hope of getting hints for others, just like many open sources helped me.
 
+Ok let's talk about how to make it work.... pls follow these steps:
 ##  nividia driver
 cuda toolkit v8.0 
 
 ## cuDNN v5.1 
-for cuda8.0 and windows10
-unzip cuDNN and put the 3 files into corresponding folders in path for cudatoolkit, such as C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0
+You will need to register and answer some questions before download....
+https://developer.nvidia.com/rdp/cudnn-download, making sure the version selected is for cuda8.0 and windows10.
+unzip cuDNN and put the 3 files into corresponding folders in path for cudatoolkit, such as C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0. Yes, just copy them over, that's the best installation.
 
 ## Microsof visual studio cpp
-visual studio 2015 community,  Microsoft Visual C++ and its sdk etc
-test your installation via opening project 
+visual studio 2015 community,  Microsoft Visual C++ and its sdk etc, the more complete (C++) the better... 
+test your installation via opening project: Samples_vs2015.sln
+at:  C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0
 
 ## python3.5 
-install python3.5, then install the following packages by downloading .whl from http://www.lfd.uci.edu/~gohlke/pythonlibs/ and cmd;pip install xxx.whl
+install python3.5, then install the following packages by downloading .whl from http://www.lfd.uci.edu/~gohlke/pythonlibs/ and cmd;
+  pip install xxx.whl
 * matplotlib
 * numpy
 * Pillow
 * scipy
 * cython
-* Tensorflow-gpu newest, follow the guidance at tensorflow web 
-test your installation via running; https://github.com/sturlamolden/cython-cpp-test
+* tensorflow-gpu, (pip install tensorflow-gpu, or follow the guidance at tensorflow web)
+test your installation via cmd->python->import xxx (such as:matplotlib)
+The do what tells you at: https://github.com/sturlamolden/cython-cpp-test
 
 ## kittibox
 download this kittibox project
