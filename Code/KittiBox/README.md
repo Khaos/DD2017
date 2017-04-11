@@ -33,8 +33,9 @@ The do what tells you at: https://github.com/sturlamolden/cython-cpp-test
 
 ## kittibox
 download this kittibox project
-
-cmd： cd D:\PyProj\DD2017\Code\KittiBox\submodules\utils -> python setup.py build_ext --inplace
+cmd:  d:
+cmd： cd D:\PyProj\DD2017\Code\KittiBox\submodules\utils 
+cmd:  python setup.py build_ext --inplace
 
 this should give you a re-maked file, stitch_wrapper.pyd
      
