@@ -22,7 +22,7 @@ at:  C:\ProgramData\NVIDIA Corporation\CUDA Samples\v8.0
 ## python3.5 
 install python3.5, then install the following packages by downloading .whl from http://www.lfd.uci.edu/~gohlke/pythonlibs/ and 
 
-cmd:  pip install xxx.whl
+cmd:  pip install xxx_cp35‑cp35m‑win_amd64.whl
 
 * matplotlib
 * numpy
