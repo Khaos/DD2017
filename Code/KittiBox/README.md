@@ -33,15 +33,17 @@ The do what tells you at: https://github.com/sturlamolden/cython-cpp-test
 
 ## kittibox
 download this kittibox project
-cmd; cd xxx/kittibox/submodules/utils -> python setup.py build_ext --inplace
-     this should give you a re-maked file, stitch_wrapper.pyd
+
+cmd： cd D:\PyProj\DD2017\Code\KittiBox\submodules\utils -> python setup.py build_ext --inplace
+
+this should give you a re-maked file, stitch_wrapper.pyd
      
 ## varify    
-cmd: python demo.py --input_image data/demo.png #to obtain a prediction using [demo.png](data/demo.png) as input.
+cmd: python `demo.py --input_image data/demo.png` #to obtain a prediction using [demo.png](data/demo.png) as input.
 
-Run: `python evaluate.py` to compute train and validation scores.
+Run: `python evaluate.py` #to compute train and validation scores.
 
-Run: `python train.py` to train a new model on the Kitti Data.
+Run: `python train.py` #to train a new model on the Kitti Data.
 
 
 # Acknowledge
